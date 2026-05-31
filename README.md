@@ -15,6 +15,7 @@ This repository is arranged as a numbered learning path. Each folder contains on
 - `02-route-variable/app.py`: dynamic route parameters
 - `03-url-building-redirect/app.py`: `url_for()` and redirects
 - `04-methods-and-form-data/app.py`: GET vs POST and form/query data
+- `04-methods-and-form-data/templates/login.html`: HTML form page for testing GET and POST
 
 ## Prerequisites
 
@@ -47,6 +48,8 @@ python 04-methods-and-form-data/app.py
 ```
 
 Open your browser at `http://127.0.0.1:5000/`.
+
+For the methods example, open `http://127.0.0.1:5000/` or `http://127.0.0.1:5000/login` and use the form to submit a name with GET or POST.
 
 ## GitHub Push
 
