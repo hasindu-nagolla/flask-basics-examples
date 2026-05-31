@@ -1,16 +1,20 @@
 # Flask Basics Practice Repo
 
-This repository contains small Flask examples for learning core concepts:
+This repository is arranged as a numbered learning path. Each folder contains one small Flask example, and the folder number shows the order a beginner can follow.
 
-- Basic app and home route
-- Route variables
-- URL building and redirecting
+## Learning Path
 
-## Files
+1. [01-home-route](01-home-route)
+2. [02-route-variable](02-route-variable)
+3. [03-url-building-redirect](03-url-building-redirect)
+4. [04-methods-and-form-data](04-methods-and-form-data)
 
-- `app_hello_world.py`: minimal Flask app with `/`
-- `app_route_variable.py`: dynamic route using `/hello/<name>`
-- `app_url_building_redirect.py`: route redirection using `url_for`
+## What Each Example Teaches
+
+- `01-home-route/app.py`: a first Flask app with the home route
+- `02-route-variable/app.py`: dynamic route parameters
+- `03-url-building-redirect/app.py`: `url_for()` and redirects
+- `04-methods-and-form-data/app.py`: GET vs POST and form/query data
 
 ## Prerequisites
 
@@ -33,41 +37,29 @@ pip install -r requirements.txt
 
 ## Run Examples
 
-Run one file at a time:
+Run the example you want by pointing Python at the file inside the folder:
 
 ```bash
-python app_hello_world.py
-```
-
-Or:
-
-```bash
-python app_route_variable.py
-python app_url_building_redirect.py
+python 01-home-route/app.py
+python 02-route-variable/app.py
+python 03-url-building-redirect/app.py
+python 04-methods-and-form-data/app.py
 ```
 
 Open your browser at `http://127.0.0.1:5000/`.
 
-## GitHub Push (New Repository)
+## GitHub Push
 
 From this project folder:
 
 ```bash
-git init
 git add .
-git commit -m "Initial commit: Flask basics examples"
-git branch -M main
+git commit -m "Organize Flask examples into numbered folders"
+git push
 ```
 
-Create a repo on GitHub and connect it:
+If you want a new repo from scratch next time, GitHub CLI can create and push it in one step:
 
 ```bash
-git remote add origin <YOUR_GITHUB_REPO_URL>
-git push -u origin main
-```
-
-If GitHub CLI is installed and authenticated, you can also do:
-
-```bash
-gh repo create new-project --public --source=. --remote=origin --push
+gh repo create <repo-name> --public --source=. --remote=origin --push
 ```
