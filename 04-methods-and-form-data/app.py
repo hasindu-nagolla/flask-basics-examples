@@ -1,11 +1,6 @@
-from flask import Flask, redirect, render_template, request, url_for
+from flask import Flask, redirect, request, url_for
 
 app = Flask(__name__)
-
-
-@app.route("/")
-def index():
-    return render_template("login.html")
 
 
 @app.route("/welcome/<name>")
@@ -17,12 +12,9 @@ def welcome(name):
 def login():
     # POST reads submitted form data, GET reads query-string data.
     if request.method == "POST":
-        user = request.form.get("nm")
+        user = request.form["nm"]
     else:
         user = request.args.get("nm")
-
-    if not user:
-        return render_template("login.html")
 
     return redirect(url_for("welcome", name=user))
 

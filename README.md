@@ -16,10 +16,13 @@ This repository is arranged as a numbered learning path. Each folder contains on
 - `02-route-variable/app.py`: dynamic route parameters
 - `03-url-building-redirect/app.py`: `url_for()` and redirects
 - `04-methods-and-form-data/app.py`: GET vs POST and form/query data
+<<<<<<< HEAD
 - `04-methods-and-form-data/templates/login.html`: HTML form page for testing GET and POST
  - `06-static-files/app.py`: demo serving files from the `static/` folder
  - `06-static-files/static/sample.txt`: example static file
  - `06-static-files/templates/index.html`: page listing available static files
+=======
+>>>>>>> parent of 57aa895 (methods example form page)
 
 ## Prerequisites
 
@@ -52,8 +55,6 @@ python 04-methods-and-form-data/app.py
 ```
 
 Open your browser at `http://127.0.0.1:5000/`.
-
-For the methods example, open `http://127.0.0.1:5000/` or `http://127.0.0.1:5000/login` and use the form to submit a name with GET or POST.
 
 ## GitHub Push
 

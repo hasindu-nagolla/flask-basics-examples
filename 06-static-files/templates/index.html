@@ -1,21 +1,12 @@
-<!doctype html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Static files demo</title>
+    <script
+      type="text/javascript"
+      src="{{url_for('static', filename = 'hello.js')}}"
+    ></script>
   </head>
+
   <body>
-    <h1>Static files demo</h1>
-    <p>Files in <code>/static</code>:</p>
-    <ul>
-      {% for f in files %}
-      <li>
-        <a href="{{ url_for('static', filename=f) }}">{{ f }}</a>
-        — <a href="{{ url_for('download', filename=f) }}">download</a>
-      </li>
-      {% else %}
-      <li>No files found.</li>
-      {% endfor %}
-    </ul>
+    <input type="button" onClick="sayHello" value="Say Hello" />
   </body>
 </html>
