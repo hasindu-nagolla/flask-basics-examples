@@ -8,6 +8,7 @@ This repository is arranged as a numbered learning path. Each folder contains on
 2. [02-route-variable](02-route-variable)
 3. [03-url-building-redirect](03-url-building-redirect)
 4. [04-methods-and-form-data](04-methods-and-form-data)
+5. [06-static-files](06-static-files)
 
 ## What Each Example Teaches
 
@@ -16,6 +17,9 @@ This repository is arranged as a numbered learning path. Each folder contains on
 - `03-url-building-redirect/app.py`: `url_for()` and redirects
 - `04-methods-and-form-data/app.py`: GET vs POST and form/query data
 - `04-methods-and-form-data/templates/login.html`: HTML form page for testing GET and POST
+ - `06-static-files/app.py`: demo serving files from the `static/` folder
+ - `06-static-files/static/sample.txt`: example static file
+ - `06-static-files/templates/index.html`: page listing available static files
 
 ## Prerequisites
 

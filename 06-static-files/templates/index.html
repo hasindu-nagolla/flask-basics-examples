@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Static files demo</title>
+  </head>
+  <body>
+    <h1>Static files demo</h1>
+    <p>Files in <code>/static</code>:</p>
+    <ul>
+      {% for f in files %}
+      <li>
+        <a href="{{ url_for('static', filename=f) }}">{{ f }}</a>
+        — <a href="{{ url_for('download', filename=f) }}">download</a>
+      </li>
+      {% else %}
+      <li>No files found.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
