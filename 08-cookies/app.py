@@ -18,7 +18,10 @@ def setcookie():
 @app.route('/getcookie')
 def getcookie():
     name = request.cookies.get('userID')
-    return '<h1>welcome ' + name + '</h1>'
+    if name:
+        return '<h1>welcome ' + name +' </h1>'
+    else:
+        return '<h1>Cookie not found</h1>'
 
 if __name__ == '__main__':
     app.run(debug=True)
